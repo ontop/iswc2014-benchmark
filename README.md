@@ -1,11 +1,11 @@
 iswc2014-benchmark
 ==================
 ### Ontop Benchmark ###
-To test the Ontop system use **OntopLUBM.jar** and project parameters.
-The ontology and mappings are in the folder Ontop.
+To test the Ontop system use **OntopLUBM.jar** in Ontop folder and add the project parameters as follows:
 
-The structure is as follows:
  `java -jar OntopLUBM.jar ontology.owl mapping.obda [optional parameter]`
+ 
+ The ontology and mappings are provided in the folder Ontop.
 
 For examples:
 * To run LUBM(1,0) with the standard 14 LUBM queries type:
@@ -19,13 +19,14 @@ For examples:
 
 ### OWL-BGP Benchmark ###
 To test OWL-BGP system use HermitLUBM.jar or PelletLUBM.jar and project parameters.
+
 These jar files modify the  [OWL-BGP code] (https://code.google.com/p/owl-bgp/).
 
-Here  [LUBM generated files] (https://github.com/ontop/iswc2014-benchmark/raw/master/OWL-BGP/evaluation.7z) it is possible to download the ontologies. 
+The ontologies are given in [evaluation.7z] (https://github.com/ontop/iswc2014-benchmark/raw/master/OWL-BGP/evaluation.7z) . 
 
-It is necessary to unzip the file and have the folders ''/evaluation/ontologies'' to execute the jar.
+It is necessary to unzip the file and keep the folders ''/evaluation/ontologies'' to execute the jar.
 
-The structure is as follows:
+To execute the jar only one parameter is necessary as follows:
 
  `java -jar HermitLUBM.jar  -parameter to use OWL-BGP with Hermit Reasoner`
  
