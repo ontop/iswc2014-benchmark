@@ -1,0 +1,59 @@
+Starting LUBM(1,0) ...
+The loading time of the ontology is 3384 ms.
+Precomputing inferences...
+The precomputation time (classification and initialization of known and possible instances) is 12 ms.
+The preparation time  is 14335 ms.
+Round 1 is starting...
+BGP Evaluation finished in: 457 ms with 1628 results. 
+BGP Evaluation finished in: 460 ms with 0 results. 
+BGP Evaluation finished in: 356 ms with 10804 results. 
+BGP Evaluation finished in: 10966 ms with 3738 results. 
+BGP Evaluation finished in: 14786 ms with 7883 results. 
+BGP Evaluation finished in: 9 ms with 3 results. 
+BGP Evaluation finished in: 47 ms with 761 results. 
+BGP Evaluation finished in: 63 ms with 1094 results. 
+BGP Evaluation finished in: 163 ms with 18939907 results. 
+BGP Evaluation finished in: 833 ms with 5982 results. 
+Round 2 is starting...
+BGP Evaluation finished in: 187 ms with 1628 results. 
+BGP Evaluation finished in: 436 ms with 0 results. 
+BGP Evaluation finished in: 209 ms with 10804 results. 
+BGP Evaluation finished in: 9638 ms with 3738 results. 
+BGP Evaluation finished in: 14152 ms with 7883 results. 
+BGP Evaluation finished in: 5 ms with 3 results. 
+BGP Evaluation finished in: 16 ms with 761 results. 
+BGP Evaluation finished in: 30 ms with 1094 results. 
+BGP Evaluation finished in: 173 ms with 18939907 results. 
+BGP Evaluation finished in: 778 ms with 5982 results. 
+Round 3 is starting...
+BGP Evaluation finished in: 185 ms with 1628 results. 
+BGP Evaluation finished in: 426 ms with 0 results. 
+BGP Evaluation finished in: 205 ms with 10804 results. 
+BGP Evaluation finished in: 8944 ms with 3738 results. 
+BGP Evaluation finished in: 14386 ms with 7883 results. 
+BGP Evaluation finished in: 5 ms with 3 results. 
+BGP Evaluation finished in: 17 ms with 761 results. 
+BGP Evaluation finished in: 28 ms with 1094 results. 
+BGP Evaluation finished in: 146 ms with 18939907 results. 
+BGP Evaluation finished in: 754 ms with 5982 results. 
+Round 4 is starting...
+BGP Evaluation finished in: 185 ms with 1628 results. 
+BGP Evaluation finished in: 432 ms with 0 results. 
+BGP Evaluation finished in: 206 ms with 10804 results. 
+BGP Evaluation finished in: 8722 ms with 3738 results. 
+BGP Evaluation finished in: 14105 ms with 7883 results. 
+BGP Evaluation finished in: 5 ms with 3 results. 
+BGP Evaluation finished in: 16 ms with 761 results. 
+BGP Evaluation finished in: 28 ms with 1094 results. 
+BGP Evaluation finished in: 146 ms with 18939907 results. 
+BGP Evaluation finished in: 751 ms with 5982 results. 
+Query 01 took on average: 157 ms, only BGP evaluation: 155 ms. 
+Query 02 took on average: 31 ms, only BGP evaluation: 29 ms. 
+Query 03 took on average: 18 ms, only BGP evaluation: 17 ms. 
+Query 04 took on average: 7 ms, only BGP evaluation: 5 ms. 
+Query 05 took on average: 14216 ms, only BGP evaluation: 14214 ms. 
+Query 06 took on average: 9104 ms, only BGP evaluation: 9102 ms. 
+Query 07 took on average: 433 ms, only BGP evaluation: 432 ms. 
+Query 08 took on average: 209 ms, only BGP evaluation: 207 ms. 
+Query 09 took on average: 187 ms, only BGP evaluation: 186 ms. 
+Query 10 took on average: 763 ms, only BGP evaluation: 762 ms. 

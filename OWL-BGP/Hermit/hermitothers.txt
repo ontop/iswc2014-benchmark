@@ -1,0 +1,42 @@
+Starting LUBM(1,0) performing static ordering...
+The loading time of the ontology is 3532 ms.
+Precomputing inferences...
+The precomputation time (classification and initialization of known and possible instances) is 12 ms.
+The preparation time  is 14587 ms.
+Taking measurements 4 times, ignoring the first warm-up for the averages...
+BGP Evaluation finished in: 127 ms with 240 results. 
+240
+BGP Evaluation finished in: 18 ms with 170 results. 
+170
+BGP Evaluation finished in: 961 ms with 416 results. 
+416
+BGP Evaluation finished in: 1140 ms with 208 results. 
+208
+BGP Evaluation finished in: 44 ms with 240 results. 
+240
+BGP Evaluation finished in: 9 ms with 170 results. 
+170
+BGP Evaluation finished in: 790 ms with 416 results. 
+416
+BGP Evaluation finished in: 866 ms with 208 results. 
+208
+BGP Evaluation finished in: 33 ms with 240 results. 
+240
+BGP Evaluation finished in: 8 ms with 170 results. 
+170
+BGP Evaluation finished in: 533 ms with 416 results. 
+416
+BGP Evaluation finished in: 892 ms with 208 results. 
+208
+BGP Evaluation finished in: 25 ms with 240 results. 
+240
+BGP Evaluation finished in: 7 ms with 170 results. 
+170
+BGP Evaluation finished in: 621 ms with 416 results. 
+416
+BGP Evaluation finished in: 969 ms with 208 results. 
+208
+Query 15 took on average: 40 ms, only BGP evaluation: 34 ms. 
+Query 16 took on average: 13 ms, only BGP evaluation: 8 ms. 
+Query 17 took on average: 653 ms, only BGP evaluation: 648 ms. 
+Query 18 took on average: 913 ms, only BGP evaluation: 909 ms. 
