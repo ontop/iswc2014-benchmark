@@ -46,7 +46,7 @@ For examples:
 
 ### Pellet Benchmark ###
 To test Pellet system use Pellet.jar and project parameters.
-The ontologies are given in [evaluation.7z] (https://github.com/ontop/iswc2014-benchmark/raw/master/Pellet/ontologies.7z).
+The ontologies are given in the zip file [ontologies.7z] (https://github.com/ontop/iswc2014-benchmark/raw/master/Pellet/ontologies.7z).
 
 To execute the jar add parameters as follows:
 
