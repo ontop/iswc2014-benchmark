@@ -22,6 +22,8 @@ To test OWL-BGP system use HermitLUBM.jar or PelletLUBM.jar and project paramete
 
 These jar files modify the  [OWL-BGP code] (https://code.google.com/p/owl-bgp/).
 
+To run OWL-BGP code with OWL 2 QL modelling of LUBM use the jar HermitLUBMQL or PelletLUBMQL and project parameters.
+
 The ontologies are given in [evaluation.7z] (https://github.com/ontop/iswc2014-benchmark/raw/master/OWL-BGP/evaluation.7z) . 
 
 It is necessary to unzip the file and keep the folders ''/evaluation/ontologies'' to execute the jar.
