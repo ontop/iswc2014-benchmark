@@ -1,0 +1,1409 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+
+_:node18skr4l2px2 a rr:SubjectMap .
+
+_:node18skr4l2px6 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> .
+
+_:node18skr4l2px3 a rr:TriplesMap .
+
+_:node18skr4l2px1 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=0" .
+
+_:node18skr4l2px5 a rr:TermMap .
+
+_:node18skr4l2px1 a rr:R2RMLView .
+
+_:node18skr4l2px2 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/UndergraduateStudent{id}" .
+
+_:node18skr4l2px3 rr:logicalTable _:node18skr4l2px1 .
+
+_:node18skr4l2px6 a rr:PredicateObjectMap .
+
+_:node18skr4l2px2 rr:termType rr:IRI .
+
+_:node18skr4l2px3 rr:subjectMap _:node18skr4l2px2 .
+
+_:node18skr4l2px6 rr:objectMap _:node18skr4l2px5 .
+
+_:node18skr4l2px5 a rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px3 rr:predicateObjectMap _:node18skr4l2px6 .
+
+_:node18skr4l2px2 a rr:TermMap .
+
+_:node18skr4l2px5 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px16 rr:objectMap _:node18skr4l2px15 .
+
+_:node18skr4l2px15 a rr:ObjectMap .
+
+_:node18skr4l2px13 a rr:TriplesMap .
+
+_:node18skr4l2px16 a rr:PredicateObjectMap .
+
+_:node18skr4l2px11 a rr:R2RMLView .
+
+_:node18skr4l2px16 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> .
+
+_:node18skr4l2px12 rr:template "http://www.Department{depid}.University{uniid}.edu/UndergraduateStudent{id}" .
+
+_:node18skr4l2px15 rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{advisorid}" .
+
+_:node18skr4l2px12 a rr:SubjectMap .
+
+_:node18skr4l2px13 rr:logicalTable _:node18skr4l2px11 .
+
+_:node18skr4l2px11 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=0 and advisortype=2" .
+
+_:node18skr4l2px13 rr:predicateObjectMap _:node18skr4l2px16 .
+
+_:node18skr4l2px12 a rr:TermMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px13 rr:subjectMap _:node18skr4l2px12 .
+
+_:node18skr4l2px15 rr:termType rr:IRI ;
+	a rr:TermMap .
+
+_:node18skr4l2px19 rr:logicalTable _:node18skr4l2px17 .
+
+_:node18skr4l2px22 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> .
+
+_:node18skr4l2px19 rr:subjectMap _:node18skr4l2px18 .
+
+_:node18skr4l2px22 rr:objectMap _:node18skr4l2px21 .
+
+_:node18skr4l2px19 a rr:TriplesMap ;
+	rr:predicateObjectMap _:node18skr4l2px22 .
+
+_:node18skr4l2px21 rr:termType rr:IRI .
+
+_:node18skr4l2px18 rr:template "http://www.Department{depid}.University{uniid}.edu/UndergraduateStudent{id}" .
+
+_:node18skr4l2px17 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=0 and advisortype=1" .
+
+_:node18skr4l2px22 a rr:PredicateObjectMap .
+
+_:node18skr4l2px21 a rr:TermMap , rr:ObjectMap .
+
+_:node18skr4l2px17 a rr:R2RMLView .
+
+_:node18skr4l2px18 a rr:SubjectMap ;
+	rr:termType rr:IRI ;
+	a rr:TermMap .
+
+_:node18skr4l2px21 rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{advisorid}" .
+
+_:node18skr4l2px23 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=0 and advisortype=3" .
+
+_:node18skr4l2px27 a rr:ObjectMap .
+
+_:node18skr4l2px28 rr:objectMap _:node18skr4l2px27 .
+
+_:node18skr4l2px25 rr:subjectMap _:node18skr4l2px24 ;
+	rr:predicateObjectMap _:node18skr4l2px28 .
+
+_:node18skr4l2px23 a rr:R2RMLView .
+
+_:node18skr4l2px27 rr:termType rr:IRI .
+
+_:node18skr4l2px25 a rr:TriplesMap .
+
+_:node18skr4l2px24 rr:template "http://www.Department{depid}.University{uniid}.edu/UndergraduateStudent{id}" .
+
+_:node18skr4l2px28 a rr:PredicateObjectMap .
+
+_:node18skr4l2px27 a rr:TermMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{advisorid}" .
+
+_:node18skr4l2px28 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> .
+
+_:node18skr4l2px24 a rr:SubjectMap .
+
+_:node18skr4l2px25 rr:logicalTable _:node18skr4l2px23 .
+
+_:node18skr4l2px24 a rr:TermMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px31 rr:predicateObjectMap _:node18skr4l2px37 .
+
+_:node18skr4l2px30 a rr:TermMap .
+
+_:node18skr4l2px31 rr:predicateObjectMap _:node18skr4l2px34 .
+
+_:node18skr4l2px37 rr:objectMap _:node18skr4l2px36 ;
+	rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> .
+
+_:node18skr4l2px33 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px31 rr:subjectMap _:node18skr4l2px30 ;
+	a rr:TriplesMap .
+
+_:node18skr4l2px33 a rr:ObjectMap .
+
+_:node18skr4l2px29 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=1" .
+
+_:node18skr4l2px34 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> .
+
+_:node18skr4l2px31 rr:logicalTable _:node18skr4l2px29 .
+
+_:node18skr4l2px30 a rr:SubjectMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px36 rr:termType rr:IRI .
+
+_:node18skr4l2px29 a rr:R2RMLView .
+
+_:node18skr4l2px33 a rr:TermMap .
+
+_:node18skr4l2px34 a rr:PredicateObjectMap .
+
+_:node18skr4l2px37 a rr:PredicateObjectMap .
+
+_:node18skr4l2px30 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+
+_:node18skr4l2px36 a rr:ObjectMap ;
+	rr:template "http://www.University{degreeuniid}.edu" .
+
+_:node18skr4l2px30 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{id}" .
+
+_:node18skr4l2px34 rr:objectMap _:node18skr4l2px33 .
+
+_:node18skr4l2px36 a rr:TermMap .
+
+_:node18skr4l2px33 rr:termType rr:IRI .
+
+_:node18skr4l2px44 rr:logicalTable _:node18skr4l2px42 ;
+	rr:subjectMap _:node18skr4l2px43 .
+
+_:node18skr4l2px42 a rr:R2RMLView ;
+	rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=1 and advisortype=2" .
+
+_:node18skr4l2px46 rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{advisorid}" ;
+	rr:termType rr:IRI ;
+	a rr:TermMap .
+
+_:node18skr4l2px43 a rr:TermMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px47 a rr:PredicateObjectMap .
+
+_:node18skr4l2px44 a rr:TriplesMap .
+
+_:node18skr4l2px46 a rr:ObjectMap .
+
+_:node18skr4l2px44 rr:predicateObjectMap _:node18skr4l2px47 .
+
+_:node18skr4l2px47 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> .
+
+_:node18skr4l2px43 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{id}" ;
+	a rr:SubjectMap .
+
+_:node18skr4l2px47 rr:objectMap _:node18skr4l2px46 .
+
+_:node18skr4l2px49 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{id}" ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px52 rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{advisorid}" .
+
+_:node18skr4l2px53 a rr:PredicateObjectMap ;
+	rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> .
+
+_:node18skr4l2px52 rr:termType rr:IRI .
+
+_:node18skr4l2px48 a rr:R2RMLView .
+
+_:node18skr4l2px52 a rr:TermMap .
+
+_:node18skr4l2px50 a rr:TriplesMap ;
+	rr:subjectMap _:node18skr4l2px49 ;
+	rr:logicalTable _:node18skr4l2px48 .
+
+_:node18skr4l2px48 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=1 and advisortype=1" .
+
+_:node18skr4l2px50 rr:predicateObjectMap _:node18skr4l2px53 .
+
+_:node18skr4l2px49 a rr:TermMap .
+
+_:node18skr4l2px52 a rr:ObjectMap .
+
+_:node18skr4l2px49 a rr:SubjectMap .
+
+_:node18skr4l2px53 rr:objectMap _:node18skr4l2px52 .
+
+_:node18skr4l2px56 rr:subjectMap _:node18skr4l2px55 .
+
+_:node18skr4l2px58 a rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px56 rr:predicateObjectMap _:node18skr4l2px59 .
+
+_:node18skr4l2px58 a rr:TermMap .
+
+_:node18skr4l2px55 rr:termType rr:IRI .
+
+_:node18skr4l2px54 a rr:R2RMLView .
+
+_:node18skr4l2px55 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{id}" .
+
+_:node18skr4l2px59 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ;
+	a rr:PredicateObjectMap .
+
+_:node18skr4l2px56 rr:logicalTable _:node18skr4l2px54 .
+
+_:node18skr4l2px55 a rr:TermMap .
+
+_:node18skr4l2px58 rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{advisorid}" .
+
+_:node18skr4l2px54 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=1 and advisortype=3" .
+
+_:node18skr4l2px55 a rr:SubjectMap .
+
+_:node18skr4l2px59 rr:objectMap _:node18skr4l2px58 .
+
+_:node18skr4l2px56 a rr:TriplesMap .
+
+_:node18skr4l2px64 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateCourse{courseid}" .
+
+_:node18skr4l2px62 rr:predicateObjectMap _:node18skr4l2px65 .
+
+_:node18skr4l2px61 rr:termType rr:IRI .
+
+_:node18skr4l2px64 a rr:ObjectMap .
+
+_:node18skr4l2px62 rr:logicalTable _:node18skr4l2px60 .
+
+_:node18skr4l2px61 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{studid}" .
+
+_:node18skr4l2px65 a rr:PredicateObjectMap .
+
+_:node18skr4l2px62 rr:subjectMap _:node18skr4l2px61 .
+
+_:node18skr4l2px61 a rr:TermMap .
+
+_:node18skr4l2px64 a rr:TermMap .
+
+_:node18skr4l2px62 a rr:TriplesMap .
+
+_:node18skr4l2px65 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> .
+
+_:node18skr4l2px60 a rr:R2RMLView .
+
+_:node18skr4l2px61 a rr:SubjectMap .
+
+_:node18skr4l2px65 rr:objectMap _:node18skr4l2px64 .
+
+_:node18skr4l2px60 rr:sqlQuery "select depid, uniid, studtype, studid, coursetype, courseid from takescourses where coursetype=1" .
+
+_:node18skr4l2px64 rr:termType rr:IRI .
+
+_:node18skr4l2px66 a rr:R2RMLView .
+
+_:node18skr4l2px68 rr:subjectMap _:node18skr4l2px67 ;
+	rr:logicalTable _:node18skr4l2px66 .
+
+_:node18skr4l2px67 rr:template "http://www.Department{depid}.University{uniid}.edu/UndergraduateStudent{studid}" .
+
+_:node18skr4l2px71 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> .
+
+_:node18skr4l2px68 a rr:TriplesMap .
+
+_:node18skr4l2px70 a rr:TermMap .
+
+_:node18skr4l2px71 a rr:PredicateObjectMap .
+
+_:node18skr4l2px70 a rr:ObjectMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/Course{courseid}" .
+
+_:node18skr4l2px71 rr:objectMap _:node18skr4l2px70 .
+
+_:node18skr4l2px66 rr:sqlQuery "select depid, uniid, studtype, studid, coursetype, courseid from takescourses where coursetype=0" .
+
+_:node18skr4l2px67 a rr:SubjectMap , rr:TermMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px70 rr:termType rr:IRI .
+
+_:node18skr4l2px68 rr:predicateObjectMap _:node18skr4l2px71 .
+
+_:node18skr4l2px82 a rr:TermMap .
+
+_:node18skr4l2px73 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+
+_:node18skr4l2px85 a rr:ObjectMap .
+
+_:node18skr4l2px82 a rr:ObjectMap .
+
+_:node18skr4l2px80 rr:objectMap _:node18skr4l2px79 .
+
+_:node18skr4l2px85 rr:template "http://www.University{docD}.edu" .
+
+_:node18skr4l2px79 a rr:TermMap .
+
+_:node18skr4l2px83 a rr:PredicateObjectMap .
+
+_:node18skr4l2px86 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#doctoralDegreeFrom> .
+
+_:node18skr4l2px77 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> .
+
+_:node18skr4l2px86 rr:objectMap _:node18skr4l2px85 .
+
+_:node18skr4l2px74 a rr:TriplesMap .
+
+_:node18skr4l2px72 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=2" .
+
+_:node18skr4l2px76 a rr:TermMap , rr:ObjectMap .
+
+_:node18skr4l2px79 a rr:ObjectMap .
+
+_:node18skr4l2px73 a rr:TermMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{id}" .
+
+_:node18skr4l2px74 rr:subjectMap _:node18skr4l2px73 .
+
+_:node18skr4l2px76 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px77 a rr:PredicateObjectMap .
+
+_:node18skr4l2px73 rr:termType rr:IRI .
+
+_:node18skr4l2px83 rr:objectMap _:node18skr4l2px82 .
+
+_:node18skr4l2px79 rr:termType rr:IRI ;
+	rr:template "http://www.University{underD}.edu" .
+
+_:node18skr4l2px80 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> .
+
+_:node18skr4l2px74 rr:predicateObjectMap _:node18skr4l2px83 , _:node18skr4l2px86 ;
+	rr:logicalTable _:node18skr4l2px72 .
+
+_:node18skr4l2px86 a rr:PredicateObjectMap .
+
+_:node18skr4l2px74 rr:predicateObjectMap _:node18skr4l2px77 .
+
+_:node18skr4l2px76 rr:termType rr:IRI .
+
+_:node18skr4l2px74 rr:predicateObjectMap _:node18skr4l2px80 .
+
+_:node18skr4l2px85 rr:termType rr:IRI ;
+	a rr:TermMap .
+
+_:node18skr4l2px80 a rr:PredicateObjectMap .
+
+_:node18skr4l2px83 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#mastersDegreeFrom> .
+
+_:node18skr4l2px82 rr:termType rr:IRI .
+
+_:node18skr4l2px72 a rr:R2RMLView .
+
+_:node18skr4l2px73 a rr:SubjectMap .
+
+_:node18skr4l2px77 rr:objectMap _:node18skr4l2px76 .
+
+_:node18skr4l2px82 rr:template "http://www.University{masterD}.edu" .
+
+_:node18skr4l2px108 rr:template "http://www.University{docD}.edu" .
+
+_:node18skr4l2px95 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=1" .
+
+_:node18skr4l2px103 rr:objectMap _:node18skr4l2px102 .
+
+_:node18skr4l2px105 rr:termType rr:IRI .
+
+_:node18skr4l2px102 a rr:TermMap .
+
+_:node18skr4l2px109 a rr:PredicateObjectMap .
+
+_:node18skr4l2px96 rr:termType rr:IRI .
+
+_:node18skr4l2px97 rr:subjectMap _:node18skr4l2px96 .
+
+_:node18skr4l2px102 rr:termType rr:IRI .
+
+_:node18skr4l2px108 a rr:ObjectMap .
+
+_:node18skr4l2px100 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> .
+
+_:node18skr4l2px106 rr:objectMap _:node18skr4l2px105 .
+
+_:node18skr4l2px99 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px97 rr:logicalTable _:node18skr4l2px95 .
+
+_:node18skr4l2px99 a rr:ObjectMap .
+
+_:node18skr4l2px100 rr:objectMap _:node18skr4l2px99 .
+
+_:node18skr4l2px99 a rr:TermMap .
+
+_:node18skr4l2px97 a rr:TriplesMap .
+
+_:node18skr4l2px102 a rr:ObjectMap .
+
+_:node18skr4l2px105 rr:template "http://www.University{masterD}.edu" .
+
+_:node18skr4l2px99 rr:termType rr:IRI .
+
+_:node18skr4l2px102 rr:template "http://www.University{underD}.edu" .
+
+_:node18skr4l2px96 a rr:SubjectMap .
+
+_:node18skr4l2px106 a rr:PredicateObjectMap .
+
+_:node18skr4l2px100 a rr:PredicateObjectMap .
+
+_:node18skr4l2px105 a rr:TermMap .
+
+_:node18skr4l2px109 rr:objectMap _:node18skr4l2px108 .
+
+_:node18skr4l2px96 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+
+_:node18skr4l2px97 rr:predicateObjectMap _:node18skr4l2px109 .
+
+_:node18skr4l2px103 a rr:PredicateObjectMap .
+
+_:node18skr4l2px108 rr:termType rr:IRI .
+
+_:node18skr4l2px96 rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{id}" .
+
+_:node18skr4l2px109 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#doctoralDegreeFrom> .
+
+_:node18skr4l2px97 rr:predicateObjectMap _:node18skr4l2px100 .
+
+_:node18skr4l2px105 a rr:ObjectMap .
+
+_:node18skr4l2px96 a rr:TermMap .
+
+_:node18skr4l2px108 a rr:TermMap .
+
+_:node18skr4l2px106 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#mastersDegreeFrom> .
+
+_:node18skr4l2px103 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> .
+
+_:node18skr4l2px97 rr:predicateObjectMap _:node18skr4l2px103 , _:node18skr4l2px106 .
+
+_:node18skr4l2px95 a rr:R2RMLView .
+
+_:node18skr4l2px120 rr:predicateObjectMap _:node18skr4l2px126 .
+
+_:node18skr4l2px129 a rr:PredicateObjectMap .
+
+_:node18skr4l2px120 rr:predicateObjectMap _:node18skr4l2px129 .
+
+_:node18skr4l2px122 rr:termType rr:IRI .
+
+_:node18skr4l2px126 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> .
+
+_:node18skr4l2px120 rr:predicateObjectMap _:node18skr4l2px123 .
+
+_:node18skr4l2px126 rr:objectMap _:node18skr4l2px125 .
+
+_:node18skr4l2px128 a rr:TermMap ;
+	rr:template "http://www.University{masterD}.edu" .
+
+_:node18skr4l2px120 a rr:TriplesMap .
+
+_:node18skr4l2px119 a rr:TermMap .
+
+_:node18skr4l2px125 rr:template "http://www.University{underD}.edu" .
+
+_:node18skr4l2px131 rr:termType rr:IRI .
+
+_:node18skr4l2px119 rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{id}" .
+
+_:node18skr4l2px120 rr:logicalTable _:node18skr4l2px118 .
+
+_:node18skr4l2px131 rr:template "http://www.University{docD}.edu" .
+
+_:node18skr4l2px132 rr:objectMap _:node18skr4l2px131 .
+
+_:node18skr4l2px128 rr:termType rr:IRI .
+
+_:node18skr4l2px131 a rr:TermMap .
+
+_:node18skr4l2px128 a rr:ObjectMap .
+
+_:node18skr4l2px122 a rr:TermMap .
+
+_:node18skr4l2px129 rr:objectMap _:node18skr4l2px128 .
+
+_:node18skr4l2px122 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px125 rr:termType rr:IRI .
+
+_:node18skr4l2px118 a rr:R2RMLView .
+
+_:node18skr4l2px129 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#mastersDegreeFrom> .
+
+_:node18skr4l2px123 rr:objectMap _:node18skr4l2px122 ;
+	a rr:PredicateObjectMap .
+
+_:node18skr4l2px126 a rr:PredicateObjectMap .
+
+_:node18skr4l2px119 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px125 a rr:TermMap .
+
+_:node18skr4l2px122 a rr:ObjectMap .
+
+_:node18skr4l2px123 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> .
+
+_:node18skr4l2px125 a rr:ObjectMap .
+
+_:node18skr4l2px118 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=3" .
+
+_:node18skr4l2px132 a rr:PredicateObjectMap .
+
+_:node18skr4l2px120 rr:subjectMap _:node18skr4l2px119 .
+
+_:node18skr4l2px119 a rr:SubjectMap .
+
+_:node18skr4l2px120 rr:predicateObjectMap _:node18skr4l2px132 .
+
+_:node18skr4l2px132 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#doctoralDegreeFrom> .
+
+_:node18skr4l2px131 a rr:ObjectMap .
+
+_:node18skr4l2px149 rr:objectMap _:node18skr4l2px148 .
+
+_:node18skr4l2px155 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#doctoralDegreeFrom> .
+
+_:node18skr4l2px149 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> .
+
+_:node18skr4l2px145 a rr:ObjectMap .
+
+_:node18skr4l2px142 rr:template "http://www.Department{depid}.University{uniid}.edu/Lecturer{id}" .
+
+_:node18skr4l2px148 a rr:ObjectMap .
+
+_:node18skr4l2px155 a rr:PredicateObjectMap .
+
+_:node18skr4l2px142 rr:termType rr:IRI .
+
+_:node18skr4l2px149 a rr:PredicateObjectMap .
+
+_:node18skr4l2px155 rr:objectMap _:node18skr4l2px154 .
+
+_:node18skr4l2px154 rr:template "http://www.University{docD}.edu" .
+
+_:node18skr4l2px151 a rr:TermMap ;
+	rr:template "http://www.University{masterD}.edu" .
+
+_:node18skr4l2px143 rr:subjectMap _:node18skr4l2px142 ;
+	rr:predicateObjectMap _:node18skr4l2px155 .
+
+_:node18skr4l2px141 a rr:R2RMLView .
+
+_:node18skr4l2px142 a rr:TermMap .
+
+_:node18skr4l2px154 a rr:ObjectMap .
+
+_:node18skr4l2px143 rr:predicateObjectMap _:node18skr4l2px152 .
+
+_:node18skr4l2px148 a rr:TermMap .
+
+_:node18skr4l2px142 a rr:SubjectMap .
+
+_:node18skr4l2px148 rr:template "http://www.University{underD}.edu" ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px146 a rr:PredicateObjectMap .
+
+_:node18skr4l2px151 rr:termType rr:IRI .
+
+_:node18skr4l2px152 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#mastersDegreeFrom> .
+
+_:node18skr4l2px145 a rr:TermMap .
+
+_:node18skr4l2px154 a rr:TermMap .
+
+_:node18skr4l2px143 a rr:TriplesMap .
+
+_:node18skr4l2px152 rr:objectMap _:node18skr4l2px151 .
+
+_:node18skr4l2px142 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+
+_:node18skr4l2px143 rr:predicateObjectMap _:node18skr4l2px149 .
+
+_:node18skr4l2px146 rr:objectMap _:node18skr4l2px145 .
+
+_:node18skr4l2px143 rr:logicalTable _:node18skr4l2px141 ;
+	rr:predicateObjectMap _:node18skr4l2px146 .
+
+_:node18skr4l2px152 a rr:PredicateObjectMap .
+
+_:node18skr4l2px145 rr:template "http://www.Department{depid}.University{uniid}.edu" ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px146 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> .
+
+_:node18skr4l2px154 rr:termType rr:IRI .
+
+_:node18skr4l2px151 a rr:ObjectMap .
+
+_:node18skr4l2px141 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=0" .
+
+_:node18skr4l2px166 rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{authorid}" .
+
+_:node18skr4l2px164 a rr:TriplesMap .
+
+_:node18skr4l2px162 a rr:R2RMLView .
+
+_:node18skr4l2px164 rr:subjectMap _:node18skr4l2px163 .
+
+_:node18skr4l2px166 rr:termType rr:IRI .
+
+_:node18skr4l2px163 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication> .
+
+_:node18skr4l2px167 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> .
+
+_:node18skr4l2px163 a rr:TermMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px167 a rr:PredicateObjectMap .
+
+_:node18skr4l2px166 a rr:ObjectMap , rr:TermMap .
+
+_:node18skr4l2px164 rr:logicalTable _:node18skr4l2px162 ;
+	rr:predicateObjectMap _:node18skr4l2px167 .
+
+_:node18skr4l2px163 rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{authorid}/Publication{publicationid}" .
+
+_:node18skr4l2px162 rr:sqlQuery "select depid, uniid, publicationid, authortype, authorid from publications where authortype=2" .
+
+_:node18skr4l2px167 rr:objectMap _:node18skr4l2px166 .
+
+_:node18skr4l2px163 a rr:SubjectMap .
+
+_:node18skr4l2px168 a rr:R2RMLView .
+
+_:node18skr4l2px173 rr:objectMap _:node18skr4l2px172 .
+
+_:node18skr4l2px169 rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{authorid}/Publication{publicationid}" .
+
+_:node18skr4l2px168 rr:sqlQuery "select depid, uniid, publicationid, authortype, authorid from publications where authortype=1" .
+
+_:node18skr4l2px173 a rr:PredicateObjectMap ;
+	rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> .
+
+_:node18skr4l2px169 rr:termType rr:IRI .
+
+_:node18skr4l2px172 a rr:ObjectMap .
+
+_:node18skr4l2px170 rr:logicalTable _:node18skr4l2px168 .
+
+_:node18skr4l2px169 a rr:TermMap .
+
+_:node18skr4l2px172 a rr:TermMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{authorid}" .
+
+_:node18skr4l2px170 a rr:TriplesMap .
+
+_:node18skr4l2px169 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication> .
+
+_:node18skr4l2px172 rr:termType rr:IRI .
+
+_:node18skr4l2px170 rr:subjectMap _:node18skr4l2px169 ;
+	rr:predicateObjectMap _:node18skr4l2px173 .
+
+_:node18skr4l2px169 a rr:SubjectMap .
+
+_:node18skr4l2px179 a rr:PredicateObjectMap .
+
+_:node18skr4l2px176 rr:logicalTable _:node18skr4l2px174 ;
+	rr:predicateObjectMap _:node18skr4l2px179 ;
+	rr:subjectMap _:node18skr4l2px175 .
+
+_:node18skr4l2px175 a rr:TermMap .
+
+_:node18skr4l2px174 rr:sqlQuery "select depid, uniid, publicationid, authortype, authorid from publications where authortype=3" ;
+	a rr:R2RMLView .
+
+_:node18skr4l2px178 a rr:TermMap .
+
+_:node18skr4l2px179 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> .
+
+_:node18skr4l2px178 a rr:ObjectMap .
+
+_:node18skr4l2px179 rr:objectMap _:node18skr4l2px178 .
+
+_:node18skr4l2px178 rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{authorid}" .
+
+_:node18skr4l2px175 rr:termType rr:IRI .
+
+_:node18skr4l2px178 rr:termType rr:IRI .
+
+_:node18skr4l2px175 a rr:SubjectMap .
+
+_:node18skr4l2px176 a rr:TriplesMap .
+
+_:node18skr4l2px175 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication> ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{authorid}/Publication{publicationid}" .
+
+_:node18skr4l2px182 rr:subjectMap _:node18skr4l2px181 .
+
+_:node18skr4l2px185 a rr:PredicateObjectMap .
+
+_:node18skr4l2px181 a rr:TermMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/Lecturer{authorid}/Publication{publicationid}" .
+
+_:node18skr4l2px182 rr:predicateObjectMap _:node18skr4l2px185 .
+
+_:node18skr4l2px184 a rr:ObjectMap .
+
+_:node18skr4l2px182 rr:logicalTable _:node18skr4l2px180 ;
+	a rr:TriplesMap .
+
+_:node18skr4l2px181 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication> .
+
+_:node18skr4l2px184 a rr:TermMap .
+
+_:node18skr4l2px181 rr:termType rr:IRI .
+
+_:node18skr4l2px185 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> .
+
+_:node18skr4l2px180 a rr:R2RMLView .
+
+_:node18skr4l2px185 rr:objectMap _:node18skr4l2px184 .
+
+_:node18skr4l2px184 rr:termType rr:IRI .
+
+_:node18skr4l2px180 rr:sqlQuery "select depid, uniid, publicationid, authortype, authorid from publications where authortype=0" .
+
+_:node18skr4l2px181 a rr:SubjectMap .
+
+_:node18skr4l2px184 rr:template "http://www.Department{depid}.University{uniid}.edu/Lecturer{authorid}" .
+
+_:node18skr4l2px188 rr:subjectMap _:node18skr4l2px187 .
+
+_:node18skr4l2px186 a rr:R2RMLView .
+
+_:node18skr4l2px187 rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{teacherid}" .
+
+_:node18skr4l2px191 a rr:PredicateObjectMap .
+
+_:node18skr4l2px190 rr:termType rr:IRI .
+
+_:node18skr4l2px187 a rr:TermMap , rr:SubjectMap .
+
+_:node18skr4l2px191 rr:objectMap _:node18skr4l2px190 .
+
+_:node18skr4l2px188 rr:predicateObjectMap _:node18skr4l2px191 ;
+	a rr:TriplesMap ;
+	rr:logicalTable _:node18skr4l2px186 .
+
+_:node18skr4l2px191 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> .
+
+_:node18skr4l2px190 a rr:TermMap , rr:ObjectMap .
+
+_:node18skr4l2px186 rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=0 and teachertype=2" .
+
+_:node18skr4l2px187 rr:termType rr:IRI .
+
+_:node18skr4l2px190 rr:template "http://www.Department{depid}.University{uniid}.edu/Course{id}" .
+
+_:node18skr4l2px194 a rr:TriplesMap .
+
+_:node18skr4l2px192 rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=1 and teachertype=2" .
+
+_:node18skr4l2px196 a rr:TermMap .
+
+_:node18skr4l2px197 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> .
+
+_:node18skr4l2px194 rr:subjectMap _:node18skr4l2px193 .
+
+_:node18skr4l2px193 a rr:TermMap .
+
+_:node18skr4l2px194 rr:predicateObjectMap _:node18skr4l2px197 .
+
+_:node18skr4l2px197 a rr:PredicateObjectMap .
+
+_:node18skr4l2px193 a rr:SubjectMap .
+
+_:node18skr4l2px194 rr:logicalTable _:node18skr4l2px192 .
+
+_:node18skr4l2px196 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateCourse{id}" .
+
+_:node18skr4l2px193 rr:termType rr:IRI .
+
+_:node18skr4l2px192 a rr:R2RMLView .
+
+_:node18skr4l2px197 rr:objectMap _:node18skr4l2px196 .
+
+_:node18skr4l2px196 rr:termType rr:IRI ;
+	a rr:ObjectMap .
+
+_:node18skr4l2px193 rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{teacherid}" .
+
+_:node18skr4l2px199 a rr:TermMap .
+
+_:node18skr4l2px202 rr:termType rr:IRI .
+
+_:node18skr4l2px200 a rr:TriplesMap .
+
+_:node18skr4l2px199 rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{teacherid}" .
+
+_:node18skr4l2px202 rr:template "http://www.Department{depid}.University{uniid}.edu/Course{id}" .
+
+_:node18skr4l2px198 rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=0 and teachertype=1" .
+
+_:node18skr4l2px203 rr:objectMap _:node18skr4l2px202 .
+
+_:node18skr4l2px202 a rr:ObjectMap .
+
+_:node18skr4l2px200 rr:logicalTable _:node18skr4l2px198 .
+
+_:node18skr4l2px198 a rr:R2RMLView .
+
+_:node18skr4l2px199 a rr:SubjectMap .
+
+_:node18skr4l2px203 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> ;
+	a rr:PredicateObjectMap .
+
+_:node18skr4l2px199 rr:termType rr:IRI .
+
+_:node18skr4l2px200 rr:predicateObjectMap _:node18skr4l2px203 ;
+	rr:subjectMap _:node18skr4l2px199 .
+
+_:node18skr4l2px202 a rr:TermMap .
+
+_:node18skr4l2px206 rr:subjectMap _:node18skr4l2px205 .
+
+_:node18skr4l2px205 a rr:TermMap .
+
+_:node18skr4l2px208 a rr:TermMap .
+
+_:node18skr4l2px206 a rr:TriplesMap .
+
+_:node18skr4l2px205 rr:termType rr:IRI .
+
+_:node18skr4l2px208 a rr:ObjectMap .
+
+_:node18skr4l2px204 rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=1 and teachertype=1" .
+
+_:node18skr4l2px205 a rr:SubjectMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{teacherid}" .
+
+_:node18skr4l2px206 rr:logicalTable _:node18skr4l2px204 .
+
+_:node18skr4l2px209 rr:objectMap _:node18skr4l2px208 ;
+	a rr:PredicateObjectMap .
+
+_:node18skr4l2px206 rr:predicateObjectMap _:node18skr4l2px209 .
+
+_:node18skr4l2px208 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateCourse{id}" .
+
+_:node18skr4l2px204 a rr:R2RMLView .
+
+_:node18skr4l2px209 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> .
+
+_:node18skr4l2px208 rr:termType rr:IRI .
+
+_:node18skr4l2px212 rr:logicalTable _:node18skr4l2px210 .
+
+_:node18skr4l2px215 a rr:PredicateObjectMap ;
+	rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> .
+
+_:node18skr4l2px214 rr:termType rr:IRI ;
+	a rr:ObjectMap .
+
+_:node18skr4l2px210 a rr:R2RMLView ;
+	rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=0 and teachertype=3" .
+
+_:node18skr4l2px211 a rr:SubjectMap .
+
+_:node18skr4l2px214 rr:template "http://www.Department{depid}.University{uniid}.edu/Course{id}" .
+
+_:node18skr4l2px211 a rr:TermMap .
+
+_:node18skr4l2px214 a rr:TermMap .
+
+_:node18skr4l2px212 a rr:TriplesMap ;
+	rr:subjectMap _:node18skr4l2px211 .
+
+_:node18skr4l2px211 rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{teacherid}" .
+
+_:node18skr4l2px215 rr:objectMap _:node18skr4l2px214 .
+
+_:node18skr4l2px212 rr:predicateObjectMap _:node18skr4l2px215 .
+
+_:node18skr4l2px211 rr:termType rr:IRI .
+
+_:node18skr4l2px220 a rr:ObjectMap .
+
+_:node18skr4l2px217 a rr:TermMap .
+
+_:node18skr4l2px221 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> .
+
+_:node18skr4l2px218 rr:logicalTable _:node18skr4l2px216 .
+
+_:node18skr4l2px220 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateCourse{id}" ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px216 rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=1 and teachertype=3" .
+
+_:node18skr4l2px217 rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{teacherid}" .
+
+_:node18skr4l2px221 a rr:PredicateObjectMap .
+
+_:node18skr4l2px218 rr:subjectMap _:node18skr4l2px217 ;
+	a rr:TriplesMap .
+
+_:node18skr4l2px217 rr:termType rr:IRI .
+
+_:node18skr4l2px216 a rr:R2RMLView .
+
+_:node18skr4l2px221 rr:objectMap _:node18skr4l2px220 .
+
+_:node18skr4l2px220 a rr:TermMap .
+
+_:node18skr4l2px217 a rr:SubjectMap .
+
+_:node18skr4l2px218 rr:predicateObjectMap _:node18skr4l2px221 .
+
+_:node18skr4l2px226 rr:template "http://www.Department{depid}.University{uniid}.edu/Course{id}" ;
+	a rr:TermMap .
+
+_:node18skr4l2px222 a rr:R2RMLView .
+
+_:node18skr4l2px224 rr:logicalTable _:node18skr4l2px222 ;
+	rr:subjectMap _:node18skr4l2px223 .
+
+_:node18skr4l2px226 rr:termType rr:IRI .
+
+_:node18skr4l2px223 a rr:SubjectMap .
+
+_:node18skr4l2px227 rr:objectMap _:node18skr4l2px226 .
+
+_:node18skr4l2px223 a rr:TermMap .
+
+_:node18skr4l2px224 a rr:TriplesMap .
+
+_:node18skr4l2px223 rr:termType rr:IRI .
+
+_:node18skr4l2px227 a rr:PredicateObjectMap .
+
+_:node18skr4l2px226 a rr:ObjectMap .
+
+_:node18skr4l2px222 rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=0 and teachertype=0" .
+
+_:node18skr4l2px224 rr:predicateObjectMap _:node18skr4l2px227 .
+
+_:node18skr4l2px227 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> .
+
+_:node18skr4l2px223 rr:template "http://www.Department{depid}.University{uniid}.edu/Lecturer{teacherid}" .
+
+_:node18skr4l2px232 a rr:TermMap .
+
+_:node18skr4l2px228 rr:sqlQuery "select depid, uniid, ctype, id, teacherid, teachertype from courses where ctype=1 and teachertype=0" .
+
+_:node18skr4l2px233 a rr:PredicateObjectMap .
+
+_:node18skr4l2px229 a rr:TermMap .
+
+_:node18skr4l2px232 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateCourse{id}" .
+
+_:node18skr4l2px233 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> .
+
+_:node18skr4l2px229 rr:template "http://www.Department{depid}.University{uniid}.edu/Lecturer{teacherid}" ;
+	a rr:SubjectMap .
+
+_:node18skr4l2px230 rr:predicateObjectMap _:node18skr4l2px233 .
+
+_:node18skr4l2px233 rr:objectMap _:node18skr4l2px232 .
+
+_:node18skr4l2px232 a rr:ObjectMap .
+
+_:node18skr4l2px229 rr:termType rr:IRI .
+
+_:node18skr4l2px232 rr:termType rr:IRI .
+
+_:node18skr4l2px228 a rr:R2RMLView .
+
+_:node18skr4l2px230 a rr:TriplesMap ;
+	rr:logicalTable _:node18skr4l2px228 ;
+	rr:subjectMap _:node18skr4l2px229 .
+
+_:node18skr4l2px234 a rr:R2RMLView .
+
+_:node18skr4l2px239 a rr:PredicateObjectMap ;
+	rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#member> .
+
+_:node18skr4l2px238 rr:template "http://www.Department{depid}.University{uniid}.edu/AssociateProfessor{id}" .
+
+_:node18skr4l2px235 a rr:TermMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px234 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=2" .
+
+_:node18skr4l2px236 rr:logicalTable _:node18skr4l2px234 .
+
+_:node18skr4l2px238 a rr:TermMap .
+
+_:node18skr4l2px236 rr:subjectMap _:node18skr4l2px235 .
+
+_:node18skr4l2px239 rr:objectMap _:node18skr4l2px238 .
+
+_:node18skr4l2px236 a rr:TriplesMap .
+
+_:node18skr4l2px238 a rr:ObjectMap .
+
+_:node18skr4l2px235 a rr:SubjectMap .
+
+_:node18skr4l2px238 rr:termType rr:IRI .
+
+_:node18skr4l2px235 rr:termType rr:IRI .
+
+_:node18skr4l2px236 rr:predicateObjectMap _:node18skr4l2px239 .
+
+_:node18skr4l2px244 rr:template "http://www.Department{depid}.University{uniid}.edu/AssistantProfessor{id}" .
+
+_:node18skr4l2px245 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#member> .
+
+_:node18skr4l2px242 a rr:TriplesMap .
+
+_:node18skr4l2px244 rr:termType rr:IRI .
+
+_:node18skr4l2px241 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px240 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=1" .
+
+_:node18skr4l2px244 a rr:ObjectMap .
+
+_:node18skr4l2px242 rr:predicateObjectMap _:node18skr4l2px245 .
+
+_:node18skr4l2px241 rr:termType rr:IRI .
+
+_:node18skr4l2px244 a rr:TermMap .
+
+_:node18skr4l2px241 a rr:TermMap .
+
+_:node18skr4l2px245 rr:objectMap _:node18skr4l2px244 .
+
+_:node18skr4l2px241 a rr:SubjectMap .
+
+_:node18skr4l2px242 rr:logicalTable _:node18skr4l2px240 .
+
+_:node18skr4l2px240 a rr:R2RMLView .
+
+_:node18skr4l2px242 rr:subjectMap _:node18skr4l2px241 .
+
+_:node18skr4l2px245 a rr:PredicateObjectMap .
+
+_:node18skr4l2px250 a rr:TermMap .
+
+_:node18skr4l2px247 a rr:TermMap .
+
+_:node18skr4l2px248 a rr:TriplesMap .
+
+_:node18skr4l2px250 rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{id}" .
+
+_:node18skr4l2px251 a rr:PredicateObjectMap ;
+	rr:objectMap _:node18skr4l2px250 .
+
+_:node18skr4l2px250 a rr:ObjectMap .
+
+_:node18skr4l2px248 rr:logicalTable _:node18skr4l2px246 .
+
+_:node18skr4l2px247 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px248 rr:predicateObjectMap _:node18skr4l2px251 .
+
+_:node18skr4l2px247 rr:termType rr:IRI .
+
+_:node18skr4l2px246 a rr:R2RMLView .
+
+_:node18skr4l2px251 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#member> .
+
+_:node18skr4l2px247 a rr:SubjectMap .
+
+_:node18skr4l2px246 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=3" .
+
+_:node18skr4l2px250 rr:termType rr:IRI .
+
+_:node18skr4l2px248 rr:subjectMap _:node18skr4l2px247 .
+
+_:node18skr4l2px252 rr:sqlQuery "select depid, uniid, ttype, id, name, underD, masterD, docD, email, phone, research from teachers where ttype=0" .
+
+_:node18skr4l2px257 a rr:PredicateObjectMap .
+
+_:node18skr4l2px256 a rr:ObjectMap , rr:TermMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/Lecturer{id}" .
+
+_:node18skr4l2px254 rr:predicateObjectMap _:node18skr4l2px257 .
+
+_:node18skr4l2px256 rr:termType rr:IRI .
+
+_:node18skr4l2px252 a rr:R2RMLView .
+
+_:node18skr4l2px257 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#member> .
+
+_:node18skr4l2px253 a rr:SubjectMap .
+
+_:node18skr4l2px254 a rr:TriplesMap .
+
+_:node18skr4l2px253 rr:termType rr:IRI .
+
+_:node18skr4l2px254 rr:logicalTable _:node18skr4l2px252 .
+
+_:node18skr4l2px253 a rr:TermMap .
+
+_:node18skr4l2px257 rr:objectMap _:node18skr4l2px256 .
+
+_:node18skr4l2px253 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px254 rr:subjectMap _:node18skr4l2px253 .
+
+_:node18skr4l2px260 a rr:TriplesMap .
+
+_:node18skr4l2px259 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px262 rr:template "http://www.Department{depid}.University{uniid}.edu/UndergraduateStudent{id}" .
+
+_:node18skr4l2px260 rr:subjectMap _:node18skr4l2px259 .
+
+_:node18skr4l2px259 rr:termType rr:IRI .
+
+_:node18skr4l2px263 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#member> .
+
+_:node18skr4l2px259 a rr:SubjectMap .
+
+_:node18skr4l2px260 rr:logicalTable _:node18skr4l2px258 .
+
+_:node18skr4l2px262 a rr:TermMap .
+
+_:node18skr4l2px263 a rr:PredicateObjectMap .
+
+_:node18skr4l2px258 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=0" ;
+	a rr:R2RMLView .
+
+_:node18skr4l2px263 rr:objectMap _:node18skr4l2px262 .
+
+_:node18skr4l2px259 a rr:TermMap .
+
+_:node18skr4l2px260 rr:predicateObjectMap _:node18skr4l2px263 .
+
+_:node18skr4l2px262 a rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px266 a rr:TriplesMap ;
+	rr:logicalTable _:node18skr4l2px264 .
+
+_:node18skr4l2px269 rr:objectMap _:node18skr4l2px268 .
+
+_:node18skr4l2px268 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{id}" .
+
+_:node18skr4l2px264 rr:sqlQuery "select depid, uniid, id, stype, name, degreeuniid, email, phone, advisorid, advisortype from students where stype=1" .
+
+_:node18skr4l2px266 rr:predicateObjectMap _:node18skr4l2px269 .
+
+_:node18skr4l2px265 a rr:TermMap .
+
+_:node18skr4l2px268 a rr:ObjectMap .
+
+_:node18skr4l2px269 a rr:PredicateObjectMap .
+
+_:node18skr4l2px268 a rr:TermMap .
+
+_:node18skr4l2px265 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px266 rr:subjectMap _:node18skr4l2px265 .
+
+_:node18skr4l2px265 rr:termType rr:IRI .
+
+_:node18skr4l2px268 rr:termType rr:IRI .
+
+_:node18skr4l2px269 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#member> .
+
+_:node18skr4l2px264 a rr:R2RMLView .
+
+_:node18skr4l2px265 a rr:SubjectMap .
+
+_:node18skr4l2px275 a rr:PredicateObjectMap .
+
+_:node18skr4l2px272 rr:subjectMap _:node18skr4l2px271 .
+
+_:node18skr4l2px275 rr:objectMap _:node18skr4l2px274 .
+
+_:node18skr4l2px271 rr:template "http://www.Department{depid}.University{uniid}.edu/ResearchGroup{id}" .
+
+_:node18skr4l2px272 rr:logicalTable _:node18skr4l2px270 .
+
+_:node18skr4l2px271 a rr:SubjectMap .
+
+_:node18skr4l2px274 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px271 a rr:TermMap .
+
+_:node18skr4l2px270 rr:sqlQuery "select depid, uniid, id from researchgroups" .
+
+_:node18skr4l2px272 a rr:TriplesMap .
+
+_:node18skr4l2px270 a rr:R2RMLView .
+
+_:node18skr4l2px271 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchGroup> .
+
+_:node18skr4l2px274 a rr:ObjectMap .
+
+_:node18skr4l2px271 rr:termType rr:IRI .
+
+_:node18skr4l2px274 rr:termType rr:IRI .
+
+_:node18skr4l2px275 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> .
+
+_:node18skr4l2px272 rr:predicateObjectMap _:node18skr4l2px275 .
+
+_:node18skr4l2px274 a rr:TermMap .
+
+_:node18skr4l2px277 a rr:TermMap .
+
+_:node18skr4l2px280 rr:termType rr:IRI .
+
+_:node18skr4l2px281 a rr:PredicateObjectMap ;
+	rr:objectMap _:node18skr4l2px280 .
+
+_:node18skr4l2px277 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> .
+
+_:node18skr4l2px276 a rr:R2RMLView .
+
+_:node18skr4l2px280 rr:template "http://www.University{universityid}.edu" .
+
+_:node18skr4l2px277 rr:termType rr:IRI .
+
+_:node18skr4l2px280 a rr:TermMap , rr:ObjectMap .
+
+_:node18skr4l2px281 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> .
+
+_:node18skr4l2px278 rr:predicateObjectMap _:node18skr4l2px281 ;
+	rr:subjectMap _:node18skr4l2px277 .
+
+_:node18skr4l2px277 a rr:SubjectMap .
+
+_:node18skr4l2px278 rr:logicalTable _:node18skr4l2px276 .
+
+_:node18skr4l2px276 rr:sqlQuery "select departmentid, universityid from departments" .
+
+_:node18skr4l2px277 rr:template "http://www.Department{departmentid}.University{universityid}.edu" .
+
+_:node18skr4l2px278 a rr:TriplesMap .
+
+_:node18skr4l2px284 a rr:TriplesMap ;
+	rr:logicalTable _:node18skr4l2px282 .
+
+_:node18skr4l2px283 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchGroup> .
+
+_:node18skr4l2px286 rr:template "http://www.University{uniid}.edu" .
+
+_:node18skr4l2px283 rr:termType rr:IRI .
+
+_:node18skr4l2px286 a rr:TermMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px282 rr:sqlQuery "select depid, uniid, id from researchgroups" .
+
+_:node18skr4l2px283 a rr:TermMap .
+
+_:node18skr4l2px284 rr:subjectMap _:node18skr4l2px283 .
+
+_:node18skr4l2px287 rr:objectMap _:node18skr4l2px286 .
+
+_:node18skr4l2px286 a rr:ObjectMap .
+
+_:node18skr4l2px283 rr:template "http://www.Department{depid}.University{uniid}.edu/ResearchGroup{id}" .
+
+_:node18skr4l2px287 a rr:PredicateObjectMap .
+
+_:node18skr4l2px284 rr:predicateObjectMap _:node18skr4l2px287 .
+
+_:node18skr4l2px287 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> .
+
+_:node18skr4l2px282 a rr:R2RMLView .
+
+_:node18skr4l2px283 a rr:SubjectMap .
+
+_:node18skr4l2px290 a rr:TriplesMap .
+
+_:node18skr4l2px288 a rr:R2RMLView .
+
+_:node18skr4l2px290 rr:logicalTable _:node18skr4l2px288 .
+
+_:node18skr4l2px292 rr:termType rr:IRI .
+
+_:node18skr4l2px293 a rr:PredicateObjectMap ;
+	rr:objectMap _:node18skr4l2px292 .
+
+_:node18skr4l2px292 rr:template "http://www.Department{depid}.University{uniid}.edu" .
+
+_:node18skr4l2px289 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+
+_:node18skr4l2px290 rr:predicateObjectMap _:node18skr4l2px293 .
+
+_:node18skr4l2px289 rr:template "http://www.Department{depid}.University{uniid}.edu/FullProfessor{profid}" .
+
+_:node18skr4l2px293 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> .
+
+_:node18skr4l2px290 rr:subjectMap _:node18skr4l2px289 .
+
+_:node18skr4l2px289 rr:termType rr:IRI .
+
+_:node18skr4l2px292 a rr:ObjectMap .
+
+_:node18skr4l2px288 rr:sqlQuery "select depid, uniid, profid from heads" .
+
+_:node18skr4l2px292 a rr:TermMap .
+
+_:node18skr4l2px289 a rr:SubjectMap , rr:TermMap .
+
+_:node18skr4l2px296 a rr:TriplesMap .
+
+_:node18skr4l2px294 a rr:R2RMLView .
+
+_:node18skr4l2px296 rr:logicalTable _:node18skr4l2px294 .
+
+_:node18skr4l2px295 rr:termType rr:IRI ;
+	rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> ;
+	a rr:TermMap .
+
+_:node18skr4l2px294 rr:sqlQuery "select depid, uniid, studid from ra" .
+
+_:node18skr4l2px295 a rr:SubjectMap .
+
+_:node18skr4l2px296 rr:subjectMap _:node18skr4l2px295 .
+
+_:node18skr4l2px295 rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{studid}" .
+
+_:node18skr4l2px298 a rr:TermMap ;
+	rr:template "http://www.Department{depid}.University{uniid}.edu/GraduateStudent{studid}" .
+
+_:node18skr4l2px299 rr:predicateObjectMap _:node18skr4l2px302 .
+
+_:node18skr4l2px302 a rr:PredicateObjectMap .
+
+_:node18skr4l2px301 a rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+_:node18skr4l2px297 a rr:R2RMLView .
+
+_:node18skr4l2px299 rr:subjectMap _:node18skr4l2px298 .
+
+_:node18skr4l2px301 a rr:TermMap .
+
+_:node18skr4l2px297 rr:sqlQuery "select depid, uniid, studid, coursetype, courseid from ta" .
+
+_:node18skr4l2px298 a rr:SubjectMap .
+
+_:node18skr4l2px302 rr:objectMap _:node18skr4l2px301 .
+
+_:node18skr4l2px299 rr:logicalTable _:node18skr4l2px297 .
+
+_:node18skr4l2px301 rr:template "http://www.Department{depid}.University{uniid}.edu/Course{courseid}" .
+
+_:node18skr4l2px298 rr:class <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+
+_:node18skr4l2px299 a rr:TriplesMap .
+
+_:node18skr4l2px298 rr:termType rr:IRI .
+
+_:node18skr4l2px302 rr:predicate <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teachingAssistantOf> .
