@@ -1,5 +1,8 @@
 iswc2014-benchmark
 ==================
+
+
+
 ### Ontop Benchmark ###
 To test the Ontop system use **OntopLUBM.jar** in Ontop folder and add the project parameters as follows:
 
@@ -61,3 +64,10 @@ To execute the jar add parameters as follows:
 
 * To run LUBM(20,0) with the SPARQLDL queries type:
  `java -jar Pellet.jar Uni20.owl DL`
+
+## References
+
+[1] Roman Kontchakov, Martin Rezk, Mariano Rodriguez-Muro, Guohui Xiao, and Michael Zakharyaschev.  
+Answering SPARQL queries over databases under OWL 2 QL entailment regime.  
+In <i>Proc. of International Semantic Web Conference (ISWC 2014)</i>, LNCS. Springer, 2014. 
+[pdf](http://www.ghxiao.org/publications/2014-iswc-sparql-ql-full.pdf)
